@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="circle_area">Area circulo</string>
+    <string name="circle_perimeter">Perimetro circulo</string>
+    <string name="cuadro_area">Area cuadrado</string>
+    <string name="cuadro_perimeter">Perimetro cuadrado</string>
+    <string name="triangle_area">Area triangulo</string>
+    <string name="triangle_perimeter">Perimetro triangulo</string>
+    <string name="side_cuadro">"Ingrese el valor un lado "</string>
+    <string name="result_cuadro_perimeter">Perimetro</string>
+    <string name="Result_perimeter_cuadro">Resultado</string>
+</resources>
