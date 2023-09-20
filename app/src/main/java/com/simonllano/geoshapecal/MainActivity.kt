@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import com.simonllano.geoshapecal.databinding.ActivityMainBinding
 import com.simonllano.geoshapecal.databinding.ActivityPerimeterSquareBinding
-
+//Prueba
 class MainActivity : AppCompatActivity() {
 
     private lateinit var geoshapecalBinding: ActivityMainBinding
