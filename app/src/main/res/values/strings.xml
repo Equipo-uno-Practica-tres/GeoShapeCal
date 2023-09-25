@@ -9,4 +9,8 @@
     <string name="side_cuadro">"Ingrese el valor de un lado "</string>
     <string name="result_cuadro_perimeter">Perimetro</string>
     <string name="Result_perimeter_cuadro">Resultado</string>
+    <string name="enter_number">Ingrese el radio</string>
+    <string name="calculate">Calcular</string>
+    <string name="textview_result_pharse">El resultado es:</string>
+    <string name="text_view_result">0.0</string>
 </resources>
