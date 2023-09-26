@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrianglePerimeterActivity">
+
+    <ImageView
+        android:id="@+id/triangle_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/triangular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valor_input_layout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triangle_image_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/valor_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/triangle_text"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:textColor="@color/headline_color"
+            android:textColorHighlight="@color/headline_color"
+            android:textColorHint="@color/headline_color"
+            android:textColorLink="@color/headline_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/triangle_peri_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/yellow_button"
+        android:text="@string/button_text_content"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor_input_layout" />
+
+    <TextView
+        android:id="@+id/resultado_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/result_perimeter_triangle"
+        android:textColor="@color/headline_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triangle_peri_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

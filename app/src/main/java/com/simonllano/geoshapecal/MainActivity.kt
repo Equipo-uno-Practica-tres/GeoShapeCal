@@ -6,6 +6,8 @@ import android.os.Bundle
 import com.simonllano.geoshapecal.databinding.ActivityMainBinding
 
 
+import com.simonllano.geoshapecal.databinding.ActivityPerimeterSquareBinding
+//Prueba
 class MainActivity : AppCompatActivity() {
 
     private lateinit var geoshapecalBinding: ActivityMainBinding
@@ -34,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         }
         geoshapecalBinding.triangleAreaButton.setOnClickListener {
             val intent = Intent(this, AreaTriangleActivity::class.java)
+            startActivity(intent)
+        }
+
+        geoshapecalBinding.trianglePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
+            val intent = Intent(this,TrianglePerimeterActivity::class.java) //donde se encontrara el perimetro del cuadrado
             startActivity(intent)
         }
 

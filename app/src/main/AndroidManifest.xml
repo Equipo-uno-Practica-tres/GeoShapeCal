@@ -26,6 +26,10 @@
         </activity>
 
         <activity
+            android:name=".TrianglePerimeterActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name=".PerimeterSquareActivity"
             android:exported="false" >
         </activity>
