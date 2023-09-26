@@ -18,4 +18,8 @@
     <string name="result_circle_area">Resultado del area</string>
     <string name="result_cuadro_area">Area</string>
     <string name="Result_area_cuadro">Resultado</string>
+    <string name="basis_value">Ingrese el valor de la base:</string>
+    <string name="height_value">Ingrese el valor de la altura:</string>
+    <string name="result_area_triangle">Calcular área</string>
+    <string name="result_area_triangle_value">Resultado del área</string>
 </resources>

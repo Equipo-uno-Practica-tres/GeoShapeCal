@@ -26,7 +26,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         geoshapecalBinding.circlePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
-            val intent = Intent(this, PerimeterCircleActivity::class.java) //donde se encontrara el perimetro del cuadrado
+            val intent = Intent(
+                this,
+                PerimeterCircleActivity::class.java
+            ) //donde se encontrara el perimetro del cuadrado
+            startActivity(intent)
+        }
+        geoshapecalBinding.triangleAreaButton.setOnClickListener {
+            val intent = Intent(this, AreaTriangleActivity::class.java)
             startActivity(intent)
         }
 
@@ -44,5 +51,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 }

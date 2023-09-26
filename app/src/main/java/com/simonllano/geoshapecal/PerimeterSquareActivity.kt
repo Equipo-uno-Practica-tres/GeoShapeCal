@@ -24,7 +24,7 @@ class PerimeterSquareActivity : AppCompatActivity() {
 
         }
         val resultadoObserver = Observer<Double> {resultado->  //Se crea el objeto observer
-            perimeterSquareBinding.resultTextView.setText(resultado.toString())
+            perimeterSquareBinding.resultadoTextView.setText(resultado.toString())
         }
         perimeterSquareViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con ...
 
@@ -38,4 +38,5 @@ class PerimeterSquareActivity : AppCompatActivity() {
 
     }
 }
+
 

@@ -29,7 +29,10 @@
             android:name=".PerimeterSquareActivity"
             android:exported="false" >
         </activity>
-
+        <activity
+            android:name=".AreaTriangleActivity"
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
