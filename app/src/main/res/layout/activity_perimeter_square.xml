@@ -16,11 +16,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cuadrado" />
+        app:srcCompat="@drawable/cuadrado"
+        tools:ignore="ContentDescription" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/side_Input_layout"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
@@ -34,10 +35,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/side_cuadro"
+            android:inputType="number|numberDecimal|numberSigned"
             android:textColor="@color/headline_color"
             android:textColorHighlight="@color/headline_color"
             android:textColorHint="@color/headline_color"
-            android:textColorLink="@color/headline_color" />
+            android:textColorLink="@color/headline_color"
+            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
