@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GeoShapeCal"
         tools:targetApi="31">
         <activity
-            android:name=".PerimeterSquareActivity"
+            android:name=".AreaTriangleActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
