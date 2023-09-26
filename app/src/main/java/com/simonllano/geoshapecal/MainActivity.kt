@@ -19,12 +19,18 @@ class MainActivity : AppCompatActivity() {
 
 
         geoshapecalBinding.cuadroPerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
-                    val intent = Intent(this,PerimeterSquareActivity::class.java) //donde se encontrara el perimetro del cuadrado
-                    startActivity(intent)
+            val intent = Intent(
+                this,
+                PerimeterSquareActivity::class.java
+            ) //donde se encontrara el perimetro del cuadrado
+            startActivity(intent)
+        }
+        geoshapecalBinding.circlePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
+            val intent = Intent(this, PerimeterCircleActivity::class.java) //donde se encontrara el perimetro del cuadrado
+            startActivity(intent)
         }
 
-        //val resultadoObserver = Observer<String> {resultado->  //Se crea el objeto observer
-          //  perimeterSquareBinding.resultTextView.setText(resultado.toString())} //muestra el resultado del perimetro
+
 
            // mainViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con el observer
         geoshapecalBinding.cuadroAreaButton.setOnClickListener {

@@ -13,13 +13,18 @@
         android:theme="@style/Theme.GeoShapeCal"
         tools:targetApi="31">
         <activity
+            android:name=".PerimeterCircleActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name=".CircleAreaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SquareAreaActivity"
             android:exported="false" >
         </activity>
 
-        <activity
-            android:name=".SquareAreaActivity"
-            android:exported="false" />
         <activity
             android:name=".PerimeterSquareActivity"
             android:exported="false" >
