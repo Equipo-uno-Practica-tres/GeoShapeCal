@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".PerimeterCircleActivity">
 
     <EditText
         android:id="@+id/edit_text_radio"
@@ -13,8 +14,9 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/enter_number"
         android:inputType="number"
-        android:text="@string/enter_number"
+        android:textColor="@color/headline_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,10 +39,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:backgroundTint="@color/yellow_button"
+        android:shadowColor="@color/yellow_button"
         android:text="@string/calculate"
+        android:textColor="@color/headline_color"
+        android:textColorHighlight="@color/yellow_button"
+        android:textColorHint="@color/yellow_button"
+        android:textColorLink="@color/yellow_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_radio" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_radio"
+        app:rippleColor="@color/yellow_button"
+        app:strokeColor="@color/headline_color" />
 
     <TextView
         android:id="@+id/text_view_phrase"
@@ -48,20 +58,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="58dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/textview_result_pharse"
+        android:textColor="@color/button_text_color"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/text_view_result"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_calculate" />
 
     <TextView
         android:id="@+id/text_view_result"
-        android:layout_width="7dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="25dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="50dp"
+        android:shadowColor="@color/background_color"
         android:text="@string/text_view_result"
+        android:textColor="@color/headline_color"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_view_phrase"
         app:layout_constraintTop_toBottomOf="@+id/button_calculate" />

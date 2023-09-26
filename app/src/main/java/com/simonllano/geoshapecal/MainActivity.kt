@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         mainViewModel= ViewModelProvider(this)[MainViewModel::class.java]
 
         geoshapecalBinding.circlePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
-                    val intent = Intent(this,PerimeterSquareActivity::class.java) //donde se encontrara el perimetro del cuadrado
+                    val intent = Intent(this, PerimeterCircleActivity::class.java) //donde se encontrara el perimetro del cuadrado
                     startActivity(intent)
         }
 
