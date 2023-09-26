@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var geoshapecalBinding: ActivityMainBinding
 
-    private lateinit var mainViewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,15 +20,19 @@ class MainActivity : AppCompatActivity() {
         val view = geoshapecalBinding.root
         setContentView(view)
 
-        mainViewModel= ViewModelProvider(this)[MainViewModel::class.java]
 
-        geoshapecalBinding.circlePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
+        geoshapecalBinding.cuadroPerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
                     val intent = Intent(this,PerimeterSquareActivity::class.java) //donde se encontrara el perimetro del cuadrado
                     startActivity(intent)
         }
 
+        geoshapecalBinding.trianglePerimeterButton.setOnClickListener {//Aca se envia la orden para abrir la actividad
+            val intent = Intent(this,TrianglePerimeterActivity::class.java) //donde se encontrara el perimetro del cuadrado
+            startActivity(intent)
+        }
+
         //val resultadoObserver = Observer<String> {resultado->  //Se crea el objeto observer
-          //  perimeterSquareBinding.resultTextView.setText(resultado.toString())} //muestra el resultado del perimetro
+            //perimeterSquareBinding.resultTextView.setText(resultado.toString())} //muestra el resultado del perimetro
 
            // mainViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con el observer
     }
