@@ -15,10 +15,10 @@ class AreaTriangleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         areaTriangleBinding = ActivityAreaTriangleBinding.inflate(layoutInflater)
+        areaTriangleViewModel = ViewModelProvider(this)[AreaTriangleViewModel::class.java]
         val view = areaTriangleBinding.root
         setContentView(view)
 
-        areaTriangleViewModel = ViewModelProvider(this)[AreaTriangleViewModel::class.java]
 
         val resultAreaTriangleObserver = Observer<Double> {resultArea ->
             areaTriangleBinding.resultAreaTriangleTextView.setText(resultArea.toString())
