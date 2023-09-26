@@ -23,7 +23,15 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
         }
 
+        //val resultadoObserver = Observer<String> {resultado->  //Se crea el objeto observer
+          //  perimeterSquareBinding.resultTextView.setText(resultado.toString())} //muestra el resultado del perimetro
 
+           // mainViewModel.resultado.observe(this, resultadoObserver) //Se conecta el view model con el observer
+        geoshapecalBinding.cuadroAreaButton.setOnClickListener {
+            val intent =Intent(this,SquareAreaActivity::class.java)
+            startActivity(intent)
+
+        }
         geoshapecalBinding.circleAreaButton.setOnClickListener {
             val intent = Intent(this,CircleAreaActivity::class.java)
             startActivity(intent)

@@ -12,4 +12,6 @@
     <string name="radio_circle_area">Ingrese el valor del radio</string>
     <string name="circle_area_calculate">Calcular area</string>
     <string name="result_circle_area">Resultado del area</string>
+    <string name="result_cuadro_area">Area</string>
+    <string name="Result_area_cuadro">Resultado</string>
 </resources>
