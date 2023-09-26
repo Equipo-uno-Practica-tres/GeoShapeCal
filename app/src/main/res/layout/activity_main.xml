@@ -72,8 +72,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_width="167dp"
+        android:layout_height="109dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="1dp"
@@ -93,7 +93,7 @@
 
         <Button
             android:id="@+id/cuadro_perimeter_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/yellow_button"
             android:text="@string/cuadro_perimeter"
@@ -145,8 +145,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
+        android:layout_width="169dp"
+        android:layout_height="108dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="1dp"
@@ -166,7 +166,7 @@
 
         <Button
             android:id="@+id/triangle_perimeter_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/yellow_button"
             android:text="@string/triangle_perimeter"

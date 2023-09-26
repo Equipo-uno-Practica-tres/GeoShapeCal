@@ -13,11 +13,30 @@
         android:theme="@style/Theme.GeoShapeCal"
         tools:targetApi="31">
         <activity
+            android:name=".PerimeterCircleActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".CircleAreaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SquareAreaActivity"
+            android:exported="false" >
+        </activity>
+
+        <activity
             android:name=".TrianglePerimeterActivity"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".PerimeterSquareActivity"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".AreaTriangleActivity"
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
