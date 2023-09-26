@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
         }
 
+
         geoshapecalBinding.circleAreaButton.setOnClickListener {
             val intent = Intent(this,CircleAreaActivity::class.java)
             startActivity(intent)
