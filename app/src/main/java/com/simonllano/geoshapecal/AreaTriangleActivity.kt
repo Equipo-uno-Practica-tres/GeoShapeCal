@@ -38,6 +38,6 @@ class AreaTriangleActivity : AppCompatActivity() {
             areaTriangleViewModel.calAreaTriangle(areaTriangleBinding.basisInputEditText.text.toString(), areaTriangleBinding.heightInputEditText.text.toString())
 
         }
-
+//modificacion prueba
     }
 }
