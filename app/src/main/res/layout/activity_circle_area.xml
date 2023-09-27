@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerimeterSquareActivity">
+    tools:context=".CircleAreaActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewCircleArea"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="100dp"
@@ -16,58 +16,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cuadrado"
-        tools:ignore="ContentDescription" />
+        app:srcCompat="@drawable/circle" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/side_Input_layout"
+        android:id="@+id/value_circle_area_text_input_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@color/headline_color"
+        app:boxStrokeColor="@color/button_text_color"
+        app:boxStrokeErrorColor="@color/headline_color"
+        app:hintTextColor="@color/button_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCircleArea">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/side_input_Edit_text"
+            android:id="@+id/value_circle_area_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/side_cuadro"
+            android:hint="@string/radio_circle_area"
             android:inputType="number|numberDecimal|numberSigned"
-            android:textColor="@color/headline_color"
-            android:textColorHighlight="@color/headline_color"
-            android:textColorHint="@color/headline_color"
-            android:textColorLink="@color/headline_color"
-            tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+            android:textColor="@color/button_text_color"
+            android:textColorHighlight="@color/button_text_color"
+            android:textColorHint="@color/button_text_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/cuadro_perimet_button"
+        android:id="@+id/circle_area_button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="160dp"
         android:backgroundTint="@color/yellow_button"
-        android:text="@string/result_cuadro_perimeter"
-        android:textColor="@color/button_text_color"
+        android:text="@string/circle_area_calculate"
+        android:textColor="@color/headline_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/side_Input_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/value_circle_area_text_input_layout" />
 
     <TextView
-        android:id="@+id/resultado_text_view"
+        android:id="@+id/result_circle_area_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="150dp"
-        android:text="@string/Result_perimeter_cuadro"
-        android:textColor="@color/headline_color"
+        android:text="@string/result_circle_area"
+        android:textColor="@color/button_text_color"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cuadro_perimet_button" />
+        app:layout_constraintTop_toBottomOf="@+id/circle_area_button_calculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

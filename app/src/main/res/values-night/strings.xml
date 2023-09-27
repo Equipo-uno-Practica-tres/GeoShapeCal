@@ -9,4 +9,7 @@
     <string name="side_cuadro">"Ingrese el valor un lado "</string>
     <string name="result_cuadro_perimeter">Perimetro</string>
     <string name="Result_perimeter_cuadro">Resultado</string>
+    <string name="triangle_text">Ingrese el valor de un lado</string>
+    <string name="button_text_content">Perímetro</string>
+    <string name="result_perimeter_triangle">Resultado</string>
 </resources>
