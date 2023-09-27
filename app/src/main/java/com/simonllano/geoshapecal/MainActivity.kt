@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Base_Theme_GeoShapeCal)
         super.onCreate(savedInstanceState)
         geoshapecalBinding = ActivityMainBinding.inflate(layoutInflater)
         val view = geoshapecalBinding.root
